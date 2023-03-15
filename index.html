@@ -1,326 +1,241 @@
-<!DOCTYPE html>
-    <html lang="en">
+﻿<!DOCTYPE html>
+<style>
+    .background-primary {
+        background-color: #1c162a;
+    }
+
+    h1{
+        color: white;
+    }
+</style>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Mateusz Afelt - Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MASSYN.DEV - Mateusz Afelt</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <!-- Insert your image, according to the example size of the portfolio -->
-                            <img src="assets/img/m.afelt.png" alt="">
-                        </div>
-                    </div>
-
-                    <h2 class="profile__name">Mateusz Afelt</h2>
-                    <h3 class="profile__profession">Web developer, Programmer</h3>
-
-                    <ul class="profile__social">
-                        <a href="https://www.linkedin.com/in/devmassyn/" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://github.com/DEVMASSYN" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </ul>
-                </div>
-				<div class="about">
-					<h3>Hi there, it's DEVMASSYN</h3>
-					<h5>IT student at the Kazimierz Wielki University<br>in Bydgoszcz, Poland</h5>
-				</div>
-
-<!--
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">7</h3>
-                        <p class="profile__info-description">
-                            Years of <br> work
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">+124</h3>
-                        <p class="profile__info-description">
-                            Completed <br> projects
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">96</h3>
-                        <p class="profile__info-description">Satisfied <br> customers</p>
-                    </div>
-                </div>
--->
-
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a download="" href="assets/pdf/Gianell-Cv.pdf" class="button">
-                        Download CV <i class="ri-download-line"></i>
-                    </a>
-
-                    <div class="profile__buttons-small">
-                        <!-- Insert a real number plus country code -->
-                        <a href="mailto:devmassyn@outlook.com" target="_blank" class="button button__small button__gray">
-                            <i class="ri-mail-line"></i>
-                        </a>
-                        <!-- Insert your brand name or profile -->
-                        <a href="https://m.me/devmassyn" target="_blank" class="button button__small button__gray">
-                            <i class="ri-messenger-line"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        Projects
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                        Skills
-                    </button>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark background-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Mateusz Afelt</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">O mnie</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Doświadczenie</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Wykształcenie</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Umiejętności</a></li> -->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Zainteresowania</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Portfolio</a></li> -->
                 </ul>
-
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="assets/img/project1.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">WWW</span>
-                                    <h3 class="projects__title">Szyrgamestudio.com</h3>
-                                    <a href="https://www.szyrgamestudio.com/" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/project2.png" alt="" class="projects__img" width="200">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">App</span>
-                                    <h3 class="projects__title">SGS Game Launcher</h3>
-                                    <a href="https://drive.google.com/file/d/1WfzxzCYwlmWXAJN5cm-laYtzcTGIbl5s/view" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/project3.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Game</span>
-                                    <h3 class="projects__title">Turbo Ninja 2D</h3>
-                                    <a href="https://gamejolt.com/games/Turbo-Ninja-2D/397312" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Movil</span>
-                                    <h3 class="projects__title">Travel app</h3>
-                                    <a href="#" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-<!--                        <article class="projects__card">
-                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Design</span>
-                                    <h3 class="projects__title">Music app design</h3>
-                                    <a href="#" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>-->
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0 bg-dark">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0 text-light">
+                        Mateusz
+                        <span class="text-info">Afelt</span>
+                    </h1>
+                    <h2 class="mb-0 text-light">
+                        "DEV
+                        <span class="text-info">MASSYN"</span>
+                    </h2>
+                    <div class="subheading mb-5 text-danger text-sm">
+                        Student 2 roku informatyki na Uniwersytecie Kazimierza Wielkiego w Bydgoszczy.
+                        <br />Młodszy programista w KDR Solutions Sp. z o.o.
+                        <br /><a href="mailto:devmassyn@proton.me">devmassyn@proton.me</a>
                     </div>
-
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">Languages and tools</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Github</h3>
-                                            <span class="skills__level">Advanced</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">HTML5, CSS</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">C++</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">C#</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">WPF C#</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills__area">
-                            <h3 class="skills__title">Tools and programs</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Adobe Dreamweaver</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Adobe Photoshop</h3>
-                                            <span class="skills__level">Advance</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Adobe Premiere Pro</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Unity</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Visual Studio / VS Code</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-									
-									 <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Node Js</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <p class="lead mb-5 text-light">
+                        HEJ! Jestem DEVMASSYN, znajomi mówią, że jestem najmądrzejszą osobą na świecie.
+                        Jeśli także chciałbyś zostać giga mądry to dobrze trafiłeś.
+                        Interesuję ciebie tematyka GAME DEVU, lubisz nowe technologię, albo chciałbyś podszkolić się w dziedzinie informatyki? - ten kanał jest dla ciebie idealny. Jeśli natomiast chciałbyś doznać trochę rozrywki - nic straconego. Wrzucam też właśnie takie filmy.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://linkedin.com/in/devmassyn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/devmassyn"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; DEVMASSYN. All rigths reserved
-            </span>
-        </footer>
-
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-light">DOŚWIADCZENIE</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0 text-info">Młodszy programista</h3>
+                            <div class="subheading mb-3 text-danger">KDR Solutions Sp. z o.o.</div>
+                            <!--<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>-->
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Październik 2022 - Obecnie</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0 text-info">Staż - Wsparcie przy pracach programistycznych</h3>
+                            <div class="subheading mb-3 text-danger">KDR Solutions Sp. z o.o.</div>
+                            <p class="text-light">W trakcie mojego stażu w firmie zajmowałem się projektem implementacji systemu zarządzania projektami opartego na kanbanie i metodyce sprintów. Projekt został stworzony na potrzeby firmy i miał na celu zwiększenie efektywności pracy.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Lipiec 2022 - Wrzesień 2022</span></div>
+                    </div>
+                    <!--<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Junior Web Designer</h3>
+                            <div class="subheading mb-3">Shout! Media Productions</div>
+                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Web Design Intern</h3>
+                            <div class="subheading mb-3">Shout! Media Productions</div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
+                    </div>-->
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-light">WYKSZTAŁCENIE</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0 text-info">Uniwersytet Kazimierza Wielkiego</h3>
+                            <div class="subheading mb-3 text-danger">Wydział Informatyki</div>
+                            <div class="text-light">kier. Informatyka, spec: Sieci i systemy rozproszone</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Październik 2021 - Obecnie</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0 text-info">Zespół Szkół Mechanicznych nr 1</h3>
+                            <div class="subheading mb-3 text-danger">Specjalizacja: Informatyka</div>
+                            <div class="text-light">Poziom wykształcenia: średnie zawodowe</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Wrzesień 2017 - Kwiecień 2021</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-light">UMIEJĘTNOŚCI</h2>
+                    <div class="subheading mb-3 text-info">Języki i narzędzia programistyczne</div>
+                    <ul class="list-inline dev-icons text-light">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                    </ul>
+                    <div class="subheading mb-3 text-info">Workflow</div>
+                    <ul class="fa-ul mb-0 text-light">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mobile-First, Responsive Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Browser Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-light">ZAINTERESOWANIA</h2>
+                    <h4 class="text-info">GAMEDEV</h4>
+                    <p class="text-light">Od kilku lat interesuje się tematem tworzenia gier. Na swoim koncie mam już kilka wydanych przeze mnie produkcji. Obecnie należę do amatorskiego studia gier, składającego się, głównie ze znajomych.</p>
+                    <p class="mb-0 text-light">Moim marzeniem jest stworzyć grę, która zachwyci miliony graczy na całym świecie.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5 text-light">PORTFOLIO</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Google Analytics Certified Developer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Mobile Web Specialist - Google Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            2
+                            <sup>nd</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - James Buchanan High School - Hackathon 2006
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3
+                            <sup>rd</sup>
+                            Place - James Buchanan High School - Hackathon 2005
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
