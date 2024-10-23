@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuLinks = document.querySelectorAll(".navbar a");
     const sections = document.querySelectorAll(".section");
+    const sectionsB = document.querySelectorAll(".sectionB");
 
     // Funkcja aktywująca wybraną sekcję
     function activateSection(targetId) {
         // Ukryj wszystkie sekcje
         sections.forEach(section => section.classList.remove("visible"));
+        sectionsB.forEach(section => section.classList.remove("visible"));
 
         // Aktywuj wybraną sekcję
         const targetSection = document.getElementById(targetId);

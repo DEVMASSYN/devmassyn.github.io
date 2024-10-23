@@ -8,19 +8,41 @@
     <title>Mateusz Afelt - Portfolio | M455YN</title>
     <link rel="stylesheet" href="css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Portfolio Mateusza Afelta, programisty i twórcy gier, znanego jako M455YN. Przykłady projektów, doświadczenie w T-SQL, C#, AI, tworzenie gier.">
+    <meta name="keywords" content="Mateusz Afelt, M455YN, portfolio, programista, T-SQL, C#, AI, gry, puzzle, programowanie">
+    <meta property="og:title" content="Mateusz Afelt - Portfolio | M455YN">
+    <meta property="og:description" content="Przykłady projektów i doświadczenie Mateusza Afelta, programisty i twórcy gier.">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://m455yn.dev">
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Mateusz Afelt",
+          "alternateName": "M455YN",
+          "jobTitle": "Programista",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "KDR Solutions"
+          },
+          "url": "https://m455yn.dev",
+          "sameAs": [
+            "https://www.linkedin.com/in/m455yn",
+            "https://github.com/M455YN"
+          ]
+        }
+        </script>
 </head>
 
 <body>
     <!-- Nawigacja -->
     <header class="header">
         <a href="#" class="logo">M455YN</a>
-
         <nav class="navbar">
             <a href="#home" style="--i:1;" class="active">Dom</a>
             <a href="#about" style="--i:2;">O mnie</a>
             <a href="#skills" style="--i:3;">Umiejętności</a>
-            <a href="#experience" style="--i:4;">Doświadczenie</a>
-            <a href="#contact" style="--i:5;">Kontakt</a>
+            <a href="#career" style="--i:4;">Kariera</a>
         </nav>
     </header>
 
@@ -51,12 +73,9 @@
 
     <section id="about" name="about" class="section visible">
         <h1>O mnie</h1>
-        <p>Pasjonat tworzenia gier oraz programowania.<br> Moją specjalnością są projekty 2D, nad którymi pracuję w
-            Unity, a także bardziej zaawansowane rozwiązania w .NET<br>
+        <p>Pasjonat tworzenia gier oraz programowania.<br>
             W swojej pracy stawiam na rozwój – lubię eksperymentować z nowymi narzędziami i technologiami, co pozwala mi
-            doskonalić swoje umiejętności oraz wprowadzać innowacyjne rozwiązania w tworzonych aplikacjach. Tworzę
-            systemy zarządzania, rozbudowane mechanizmy bitewne i interaktywne systemy dialogowe, dbając o to, by każda
-            gra była przyjemna w odbiorze i miała dobrze zaprojektowaną mechanikę.</p>
+            doskonalić swoje umiejętności.</p>
     </section>
 
     <section id="skills" class="section visible">
@@ -64,54 +83,39 @@
         <p>C#, TSQL, ASP.NET MVC, .NET, Unity, C#, Python</p>
     </section>
 
-    <section id="experience" class="section visible experience-section">
-        <h1>Doświadczenie</h1>
-
-        <div class="experience">
-            <div class="role">
-                <h3>Programista</h3>
-                <div class="date">Styczeń 2024 - Obecnie</div>
+    <section id="career" class="sectionB visible experience-section">
+        <h1>Kariera</h1>
+        <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>Styczeń 2024 - Obecnie</h2>
+                <p>Programista</p>
                 <p>KDR Solutions Sp. z o.o.</p>
+              </div>
             </div>
-        </div>
-
-        <div class="experience">
-            <div class="role">
-                <h3>Młodszy Programista</h3>
-                <div class="date">Październik 2022 - Styczeń 2024</div>
+            <div class="container right">
+              <div class="content">
+                <h2>Październik 2022 - Styczeń 2024</h2>
+                <p>Młodszy Programista</p>
                 <p>KDR Solutions Sp. z o.o.</p>
+              </div>
             </div>
-        </div>
-
-        <div class="experience">
-            <div class="role">
-                <h3>Staż - Wsparcie przy pracach programistycznych</h3>
-                <div class="date">Lipiec 2022 - Wrzesień 2022</div>
-                <p>KDR Solutions Sp. z o.o.</p>
+            <div class="container left">
+                <div class="content">
+                    <h2>Lipiec 2022 - Wrzesień 2022</h2>
+                    <p>Staż</p>
+                    <p>KDR Solutions Sp. z o.o.</p>
+                </div>
             </div>
-        </div>
-
-        <p class="description">
-            W trakcie mojego stażu w firmie zajmowałem się projektem implementacji systemu zarządzania projektami
-            opartego na kanbanie i metodyce sprintów. Projekt został stworzony na potrzeby firmy i miał na celu
-            zwiększenie efektywności pracy.
-        </p>
-
-        <div class="experience">
-            <div class="role">
-                <h3>Praktyki - Pracownik wsparcia IT</h3>
-                <div class="date">Marzec 2020</div>
-                <p>BluSoft Sp. z o.o.</p>
+            <div class="container right">
+                <div class="content">
+                    <h2>Marzec 2020</h2>
+                    <p>Praktyki </p>
+                    <p>BluSoft Sp. z o.o.</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-
-    <section id="contact" class="section">
-        <h1>Kontakt</h1>
-        <!-- Dodaj zawartość sekcji kontakt tutaj -->
+          </div> 
     </section>
 </body>
 <script src="js/app.js"></script>
-
 </html>
